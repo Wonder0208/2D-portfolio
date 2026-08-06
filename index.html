@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎬 2D Animation Team Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;800&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ===== Animated Background Canvas ===== -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- ===== Preloader ===== -->
+    <div id="preloader">
+        <div class="loader-film">
+            <div class="film-strip"></div>
+            <div class="film-strip"></div>
+            <div class="film-strip"></div>
+        </div>
+        <p class="loader-text">Loading Animation Studio...</p>
+    </div>
+
+    <!-- ===== Navigation ===== -->
+    <nav id="navbar">
+        <div class="nav-logo">
+            <span class="logo-icon">🎬</span>
+            <span class="logo-text">2D Animation Team</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#team" class="nav-link">Team</a></li>
+            <li><a href="#workflow" class="nav-link">Workflow</a></li>
+            <li><a href="#gallery" class="nav-link">Showcase</a></li>
+            <li><a href="#tools" class="nav-link">Tools</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- ===== Hero Section ===== -->
+    <section id="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge reveal-up">
+                <span class="badge-pulse"></span>
+                Available for Projects
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line reveal-text" data-delay="0">Bringing</span>
+                <span class="title-line reveal-text gradient-text" data-delay="200">Imagination</span>
+                <span class="title-line reveal-text" data-delay="400">to Life</span>
+            </h1>
+            <p class="hero-subtitle reveal-up" data-delay="600">
+                Professional 2D Animation Team — From custom design to final rendering,
+                we craft every frame with passion and precision.
+            </p>
+            <div class="hero-cta reveal-up" data-delay="800">
+                <a href="#gallery" class="btn btn-primary">
+                    <span>View Our Work</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-ghost">
+                    <span>Get in Touch</span>
+                </a>
+            </div>
+            <div class="hero-stats reveal-up" data-delay="1000">
+                <div class="stat">
+                    <span class="stat-number" data-count="22">0</span>
+                    <span class="stat-label">Projects Shown</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="5">0</span>
+                    <span class="stat-label">Categories</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="2">0</span>
+                    <span class="stat-label">Pro Tools</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ===== About Section ===== -->
+    <section id="about">
+        <div class="section-header reveal-up">
+            <span class="section-tag">Who We Are</span>
+            <h2 class="section-title">A Team That Lives <span class="gradient-text">Animation</span></h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-card reveal-up" data-delay="0">
+                <div class="about-icon">🎨</div>
+                <h3>Custom Design</h3>
+                <p>Professional custom character design and commercial graphic/ad design tailored to your project's unique vision.</p>
+            </div>
+            <div class="about-card reveal-up" data-delay="150">
+                <div class="about-icon">✏️</div>
+                <h3>Key Animation</h3>
+                <p>From 1st key animation to animation direction with QC and corrections, plus 2nd key animation — full pipeline mastery.</p>
+            </div>
+            <div class="about-card reveal-up" data-delay="300">
+                <div class="about-icon">🖌️</div>
+                <h3>Final Rendering</h3>
+                <p>Complete single-handed workflow from raw key animation to final digital cel coloring using OpenToonz.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Team Section ===== -->
+    <section id="team">
+        <div class="section-header reveal-up">
+            <span class="section-tag">Meet the Team</span>
+            <h2 class="section-title">The <span class="gradient-text">Artists</span> Behind the Magic</h2>
+        </div>
+        <div class="team-grid">
+            <div class="team-card reveal-up" data-delay="0">
+                <div class="team-avatar">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-inner">
+                        <span class="avatar-emoji">🎨</span>
+                    </div>
+                </div>
+                <h3 class="team-name">Memui</h3>
+                <p class="team-role">2D Animator & Designer</p>
+                <p class="team-desc">Specialist in key animation, animation direction, and custom character design.</p>
+                <div class="team-skills">
+                    <span class="skill-tag">Key Animation</span>
+                    <span class="skill-tag">Direction</span>
+                    <span class="skill-tag">Design</span>
+                </div>
+            </div>
+            <div class="team-card reveal-up" data-delay="200">
+                <div class="team-avatar">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-inner">
+                        <span class="avatar-emoji">✨</span>
+                    </div>
+                </div>
+                <h3 class="team-name">PiPi</h3>
+                <p class="team-role">2D Animator & Cel Artist</p>
+                <p class="team-desc">Master of the OpenToonz pipeline — from raw key animation to final digital cel coloring.</p>
+                <div class="team-skills">
+                    <span class="skill-tag">OpenToonz</span>
+                    <span class="skill-tag">Cel Coloring</span>
+                    <span class="skill-tag">Rendering</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Workflow Section ===== -->
+    <section id="workflow">
+        <div class="section-header reveal-up">
+            <span class="section-tag">Our Process</span>
+            <h2 class="section-title">Workflow & <span class="gradient-text">Capabilities</span></h2>
+        </div>
+        <div class="workflow-timeline">
+            <div class="workflow-step reveal-left" data-delay="0">
+                <div class="step-number">01</div>
+                <div class="step-content">
+                    <div class="step-tool">Clip Studio Paint</div>
+                    <h3>1st Key Animation</h3>
+                    <p>Initial key poses and movement breakdown — establishing the core rhythm and energy of every scene.</p>
+                </div>
+                <div class="step-connector"></div>
+            </div>
+            <div class="workflow-step reveal-right" data-delay="100">
+                <div class="step-number">02</div>
+                <div class="step-content">
+                    <div class="step-tool">Clip Studio Paint</div>
+                    <h3>Animation Direction (QC / Corrections)</h3>
+                    <p>Quality control and correction pass — refining timing, spacing, and consistency across all cuts.</p>
+                </div>
+                <div class="step-connector"></div>
+            </div>
+            <div class="workflow-step reveal-left" data-delay="200">
+                <div class="step-number">03</div>
+                <div class="step-content">
+                    <div class="step-tool">Clip Studio Paint</div>
+                    <h3>2nd Key Animation</h3>
+                    <p>Adding in-between key frames to enrich motion and smooth transitions between major poses.</p>
+                </div>
+                <div class="step-connector"></div>
+            </div>
+            <div class="workflow-step reveal-right" data-delay="300">
+                <div class="step-number">04</div>
+                <div class="step-content">
+                    <div class="step-tool">OpenToonz</div>
+                    <h3>Raw Key Animation to Final Cel</h3>
+                    <p>Complete single-handed workflow — from raw key animation through to final digital cel coloring.</p>
+                </div>
+                <div class="step-connector"></div>
+            </div>
+            <div class="workflow-step reveal-left" data-delay="400">
+                <div class="step-number">05</div>
+                <div class="step-content">
+                    <div class="step-tool">Custom Design</div>
+                    <h3>Character & Commercial Design</h3>
+                    <p>Professional custom character design and commercial graphic/ad design tailored to your project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Gallery / Showcase Section ===== -->
+    <section id="gallery">
+        <div class="section-header reveal-up">
+            <span class="section-tag">Our Work</span>
+            <h2 class="section-title">Project <span class="gradient-text">Showcase</span></h2>
+            <p class="section-desc">A collection of our latest 2D animation work — click any project to watch.</p>
+        </div>
+        <div class="gallery-filters reveal-up">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="clip-studio-paint">Clip Studio Paint</button>
+            <button class="filter-btn" data-filter="opentoonz">OpenToonz</button>
+            <button class="filter-btn" data-filter="speedpaint">Speedpaint</button>
+            <button class="filter-btn" data-filter="fan-art">Fan Art</button>
+            <button class="filter-btn" data-filter="graphic-design">Graphic Design</button>
+        </div>
+        <div class="gallery-grid" id="galleryGrid">
+            <!-- Clip Studio Paint (videos) -->
+            <div class="gallery-item video reveal-scale" data-type="video" data-category="clip-studio-paint" data-index="0">
+                <video src="work-project/Clip Studio Paint/1.mp4" muted loop preload="metadata"></video>
+                <div class="item-overlay">
+                    <div class="play-icon">▶</div>
+                    <span class="item-label">Clip Studio Paint 01</span>
+                </div>
+            </div>
+            <div class="gallery-item video reveal-scale" data-type="video" data-category="clip-studio-paint" data-index="1">
+                <video src="work-project/Clip Studio Paint/2.mp4" muted loop preload="metadata"></video>
+                <div class="item-overlay">
+                    <div class="play-icon">▶</div>
+                    <span class="item-label">Clip Studio Paint 02</span>
+                </div>
+            </div>
+            <div class="gallery-item video reveal-scale" data-type="video" data-category="clip-studio-paint" data-index="2">
+                <video src="work-project/Clip Studio Paint/3.mp4" muted loop preload="metadata"></video>
+                <div class="item-overlay">
+                    <div class="play-icon">▶</div>
+                    <span class="item-label">Clip Studio Paint 03</span>
+                </div>
+            </div>
+            <div class="gallery-item video reveal-scale" data-type="video" data-category="clip-studio-paint" data-index="3">
+                <video src="work-project/Clip Studio Paint/4.mp4" muted loop preload="metadata"></video>
+                <div class="item-overlay">
+                    <div class="play-icon">▶</div>
+                    <span class="item-label">Clip Studio Paint 04</span>
+                </div>
+            </div>
+            <div class="gallery-item video reveal-scale" data-type="video" data-category="clip-studio-paint" data-index="4">
+                <video src="work-project/Clip Studio Paint/5.mp4" muted loop preload="metadata"></video>
+                <div class="item-overlay">
+                    <div class="play-icon">▶</div>
+                    <span class="item-label">Clip Studio Paint 05</span>
+                </div>
+            </div>
+            <div class="gallery-item video reveal-scale" data-type="video" data-category="clip-studio-paint" data-index="5">
+                <video src="work-project/Clip Studio Paint/6.mp4" muted loop preload="metadata"></video>
+                <div class="item-overlay">
+                    <div class="play-icon">▶</div>
+                    <span class="item-label">Clip Studio Paint 06</span>
+                </div>
+            </div>
+            <div class="gallery-item video reveal-scale" data-type="video" data-category="clip-studio-paint" data-index="6">
+                <video src="work-project/Clip Studio Paint/7.mp4" muted loop preload="metadata"></video>
+                <div class="item-overlay">
+                    <div class="play-icon">▶</div>
+                    <span class="item-label">Clip Studio Paint 07</span>
+                </div>
+            </div>
+            <div class="gallery-item video reveal-scale" data-type="video" data-category="clip-studio-paint" data-index="7">
+                <video src="work-project/Clip Studio Paint/8.mp4" muted loop preload="metadata"></video>
+                <div class="item-overlay">
+                    <div class="play-icon">▶</div>
+                    <span class="item-label">Clip Studio Paint 08</span>
+                </div>
+            </div>
+            <!-- OpenToonz (video) -->
+            <div class="gallery-item video reveal-scale" data-type="video" data-category="opentoonz" data-index="8">
+                <video src="work-project/opentoonz/M (12).mp4" muted loop preload="metadata"></video>
+                <div class="item-overlay">
+                    <div class="play-icon">▶</div>
+                    <span class="item-label">OpenToonz 01</span>
+                </div>
+            </div>
+            <!-- Speedpaint (videos) -->
+            <div class="gallery-item video reveal-scale" data-type="video" data-category="speedpaint" data-index="9">
+                <video src="work-project/Speedpaint/M (5).mp4" muted loop preload="metadata"></video>
+                <div class="item-overlay">
+                    <div class="play-icon">▶</div>
+                    <span class="item-label">Speedpaint 01</span>
+                </div>
+            </div>
+            <div class="gallery-item video reveal-scale" data-type="video" data-category="speedpaint" data-index="10">
+                <video src="work-project/Speedpaint/M (8).mp4" muted loop preload="metadata"></video>
+                <div class="item-overlay">
+                    <div class="play-icon">▶</div>
+                    <span class="item-label">Speedpaint 02</span>
+                </div>
+            </div>
+            <div class="gallery-item video reveal-scale" data-type="video" data-category="speedpaint" data-index="11">
+                <video src="work-project/Speedpaint/M (9).mp4" muted loop preload="metadata"></video>
+                <div class="item-overlay">
+                    <div class="play-icon">▶</div>
+                    <span class="item-label">Speedpaint 03</span>
+                </div>
+            </div>
+            <!-- Fan Art (images) -->
+            <div class="gallery-item image reveal-scale" data-type="image" data-category="fan-art" data-index="12">
+                <img src="work-project/Fan Art/M (1).jpg" alt="Fan Art 1" loading="lazy">
+                <div class="item-overlay">
+                    <div class="play-icon">🔍</div>
+                    <span class="item-label">Fan Art 01</span>
+                </div>
+            </div>
+            <div class="gallery-item image reveal-scale" data-type="image" data-category="fan-art" data-index="13">
+                <img src="work-project/Fan Art/1 (1).jpg" alt="Fan Art 2" loading="lazy">
+                <div class="item-overlay">
+                    <div class="play-icon">🔍</div>
+                    <span class="item-label">Fan Art 02</span>
+                </div>
+            </div>
+            <div class="gallery-item image reveal-scale" data-type="image" data-category="fan-art" data-index="14">
+                <img src="work-project/Fan Art/1 (2).jpg" alt="Fan Art 3" loading="lazy">
+                <div class="item-overlay">
+                    <div class="play-icon">🔍</div>
+                    <span class="item-label">Fan Art 03</span>
+                </div>
+            </div>
+            <div class="gallery-item image reveal-scale" data-type="image" data-category="fan-art" data-index="15">
+                <img src="work-project/Fan Art/1 (3).jpg" alt="Fan Art 4" loading="lazy">
+                <div class="item-overlay">
+                    <div class="play-icon">🔍</div>
+                    <span class="item-label">Fan Art 04</span>
+                </div>
+            </div>
+            <div class="gallery-item image reveal-scale" data-type="image" data-category="fan-art" data-index="16">
+                <img src="work-project/Fan Art/1 (4).jpg" alt="Fan Art 5" loading="lazy">
+                <div class="item-overlay">
+                    <div class="play-icon">🔍</div>
+                    <span class="item-label">Fan Art 05</span>
+                </div>
+            </div>
+            <div class="gallery-item image reveal-scale" data-type="image" data-category="fan-art" data-index="17">
+                <img src="work-project/Fan Art/1 (1).png" alt="Fan Art 6" loading="lazy">
+                <div class="item-overlay">
+                    <div class="play-icon">🔍</div>
+                    <span class="item-label">Fan Art 06</span>
+                </div>
+            </div>
+            <!-- Graphic Design (images) -->
+            <div class="gallery-item image reveal-scale" data-type="image" data-category="graphic-design" data-index="18">
+                <img src="work-project/Graphic Design/M (2).jpg" alt="Graphic Design 1" loading="lazy">
+                <div class="item-overlay">
+                    <div class="play-icon">🔍</div>
+                    <span class="item-label">Graphic Design 01</span>
+                </div>
+            </div>
+            <div class="gallery-item image reveal-scale" data-type="image" data-category="graphic-design" data-index="19">
+                <img src="work-project/Graphic Design/M (3).jpg" alt="Graphic Design 2" loading="lazy">
+                <div class="item-overlay">
+                    <div class="play-icon">🔍</div>
+                    <span class="item-label">Graphic Design 02</span>
+                </div>
+            </div>
+            <div class="gallery-item image reveal-scale" data-type="image" data-category="graphic-design" data-index="20">
+                <img src="work-project/Graphic Design/1 (1).png" alt="Graphic Design 3" loading="lazy">
+                <div class="item-overlay">
+                    <div class="play-icon">🔍</div>
+                    <span class="item-label">Graphic Design 03</span>
+                </div>
+            </div>
+            <div class="gallery-item image reveal-scale" data-type="image" data-category="graphic-design" data-index="21">
+                <img src="work-project/Graphic Design/1 (2).png" alt="Graphic Design 4" loading="lazy">
+                <div class="item-overlay">
+                    <div class="play-icon">🔍</div>
+                    <span class="item-label">Graphic Design 04</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Lightbox Modal ===== -->
+    <div id="lightbox">
+        <div class="lightbox-backdrop"></div>
+        <button class="lightbox-close">&times;</button>
+        <button class="lightbox-nav lightbox-prev">&#10094;</button>
+        <div class="lightbox-content"></div>
+        <button class="lightbox-nav lightbox-next">&#10095;</button>
+        <div class="lightbox-counter"><span id="lbCurrent">1</span> / <span id="lbTotal">22</span></div>
+    </div>
+
+    <!-- ===== Tools Section ===== -->
+    <section id="tools">
+        <div class="section-header reveal-up">
+            <span class="section-tag">Our Arsenal</span>
+            <h2 class="section-title">Tools <span class="gradient-text">We Master</span></h2>
+        </div>
+        <div class="tools-container">
+            <div class="tool-card reveal-up" data-delay="0">
+                <div class="tool-orb">
+                    <div class="orb-inner">
+                        <span class="tool-emoji">🖌️</span>
+                    </div>
+                </div>
+                <h3>Clip Studio Paint</h3>
+                <p>Used for 1st Key Animation, Animation Direction (QC/Corrections), and 2nd Key Animation.</p>
+                <div class="tool-tags">
+                    <span class="tool-tag">Key Animation</span>
+                    <span class="tool-tag">Direction</span>
+                    <span class="tool-tag">QC</span>
+                </div>
+            </div>
+            <div class="tool-card reveal-up" data-delay="200">
+                <div class="tool-orb">
+                    <div class="orb-inner">
+                        <span class="tool-emoji">🎬</span>
+                    </div>
+                </div>
+                <h3>OpenToonz</h3>
+                <p>Complete single-handed workflow from raw key animation to final digital cel coloring.</p>
+                <div class="tool-tags">
+                    <span class="tool-tag">Cel Coloring</span>
+                    <span class="tool-tag">Rendering</span>
+                    <span class="tool-tag">Full Pipeline</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Contact / CTA Section ===== -->
+    <section id="contact">
+        <div class="contact-bg-shapes">
+            <div class="contact-shape cs-1"></div>
+            <div class="contact-shape cs-2"></div>
+        </div>
+        <div class="contact-content reveal-up">
+            <span class="section-tag">Let's Work Together</span>
+            <h2 class="contact-title">Ready to Bring Your <span class="gradient-text">Vision</span> to Life?</h2>
+            <p class="contact-desc">We handle everything from custom design to final rendering. Let's create something amazing together.</p>
+            <div class="contact-cta">
+                <a href="https://www.instagram.com/7visiongirls" target="_blank" rel="noopener" class="btn btn-primary btn-large">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                    </svg>
+                    <span>Follow Us on Instagram</span>
+                </a>
+            </div>
+            <div class="contact-info">
+                <a href="https://www.instagram.com/7visiongirls" target="_blank" rel="noopener" class="info-item info-link">
+                    <span class="info-icon">�</span>
+                    <span>@7visiongirls</span>
+                </a>
+                <div class="info-item">
+                    <span class="info-icon">🎨</span>
+                    <span>Custom Design Available</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">⚡</span>
+                    <span>Full Pipeline Production</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-icon">🎬</span>
+                <span>2D Animation Team</span>
+            </div>
+            <p class="footer-text">Bringing imagination to life, one frame at a time.</p>
+            <div class="footer-divider"></div>
+            <p class="footer-copy">&copy; 2026 2D Animation Team. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
